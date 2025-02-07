@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire pour le personnel de la Poste Tunisienne</title>
+    <link rel="stylesheet" href="style_personnel.css">
+</head>
+<body>
+    <form id="posteForm">
+        <h1>Partie I : Informations générales</h1>
+        
+        <div class="form-group">
+            <label>1/ Quel est votre rôle au sein de la poste tunisienne ?</label>
+            <select>
+                <option value="employe">Employé</option>
+                <option value="cadre">Cadre</option>
+                <option value="responsable">Responsable de service</option>
+                <option value="client">Client (étudiant, salarié, retraité...)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>2/ Quel est votre sexe ?</label>
+            <input type="radio" name="sexe" value="masculin"> Masculin
+            <input type="radio" name="sexe" value="feminin"> Féminin
+        </div>
+
+        <div class="form-group">
+            <label>3/ Quel est votre âge ?</label>
+            <input type="radio" name="age" value="moins25"> Moins de 25 ans
+            <input type="radio" name="age" value="25-35"> 25–35 ans
+            <input type="radio" name="age" value="36-45"> 36–45 ans
+            <input type="radio" name="age" value="46-60"> 46–60 ans
+            <input type="radio" name="age" value="plus60"> Plus de 60 ans
+        </div>
+
+        <div class="form-group">
+            <label>4/ Quel est votre niveau d’études ?</label>
+            <input type="radio" name="etudes" value="licence"> Licence
+            <input type="radio" name="etudes" value="master"> Master
+            <input type="radio" name="etudes" value="autres"> Autres (Merci de préciser)
+            <input type="text" name="autresEtudes">
+        </div>
+
+        <h1>Partie II : Digitalisation des services</h1>
+
+        <div class="form-group">
+            <label>1/ Avez-vous utilisé des services numériques proposés par la poste tunisienne ?</label>
+            <input type="radio" name="utilisationServices" value="oui"> Oui
+            <input type="radio" name="utilisationServices" value="non"> Non
+        </div>
+
+        <div class="form-group">
+            <label>2/ Si oui, quels services en ligne avez-vous utilisés ?</label>
+            <input type="checkbox" name="services" value="solde"> Consultation de solde
+            <input type="checkbox" name="services" value="transfert"> Transfert d'argent en ligne
+            <input type="checkbox" name="services" value="facture"> Paiement de facture
+            <input type="checkbox" name="services" value="colis"> Suivi de colis
+            <input type="checkbox" name="services" value="autres"> Autres (merci de préciser)
+            <input type="text" name="autresServices">
+        </div>
+
+        <div class="form-group">
+            <label>3/ Comment évaluez-vous la facilité d'utilisation des services numériques de la poste tunisienne ?</label>
+            <input type="radio" name="facilite" value="tresFacile"> Très facile
+            <input type="radio" name="facilite" value="facile"> Facile
+            <input type="radio" name="facilite" value="moyen"> Moyennement difficile
+            <input type="radio" name="facilite" value="difficile"> Difficile
+        </div>
+
+        <div class="form-group">
+            <label>4/ Avez-vous rencontré des difficultés lors de l'utilisation des services numériques de la poste tunisienne ?</label>
+            <input type="radio" name="difficultes" value="oui"> Oui
+            <input type="radio" name="difficultes" value="non"> Non
+            <input type="text" name="quellesDifficultes" placeholder="Si oui, lesquelles ?">
+        </div>
+
+        <div class="form-group">
+            <label>5/ Pensez-vous que les services numériques ont amélioré votre expérience avec la poste Tunisienne ?</label>
+            <input type="radio" name="amelioration" value="beaucoup"> Oui, beaucoup
+            <input type="radio" name="amelioration" value="legerement"> Oui, légèrement
+            <input type="radio" name="amelioration" value="aucune"> Non, aucune différence
+        </div>
+
+        <div class="form-group">
+            <label>6/ Dans quelle mesure la digitalisation a-t-elle impacté la qualité des services proposés par la poste tunisienne ?</label>
+            <input type="radio" name="impactQualite" value="beaucoup"> Beaucoup améliorée
+            <input type="radio" name="impactQualite" value="legerement"> Légèrement améliorée
+            <input type="radio" name="impactQualite" value="aucun"> Aucun impact
+        </div>
+
+        <h1>Partie III : Impact de la digitalisation sur la performance organisationnelle</h1>
+
+        <div class="form-group">
+            <label>1/ Depuis combien de temps travaillez-vous à la poste tunisienne ?</label>
+            <input type="radio" name="anciennete" value="moins2"> Moins de 2 ans 
+            <input type="radio" name="anciennete" value="2-5"> 2–5 ans
+            <input type="radio" name="anciennete" value="5-10"> 5–10 ans
+            <input type="radio" name="anciennete" value="plus10"> Plus de 10 ans
+        </div>
+
+        <div class="form-group">
+            <label>2/ Avez-vous déjà été formé à l'utilisation des outils digitaux dans le cadre de votre travail ?</label>
+            <input type="radio" name="formation" value="oui"> Oui
+            <input type="radio" name="formation" value="non"> Non
+        </div>
+<input type="radio" name="impactServices" value="negatif"> Négatif
+        </div>
+
+        <div class="form-group">
+            <label>9/ Selon vous, quels aspects de la poste Tunisienne se sont améliorés grâce à la digitalisation ?</label>
+            <input type="checkbox" name="ameliorations" value="rapidite"> Rapidité des services
+            <input type="checkbox" name="ameliorations" value="serviceClient"> Services client (rapidité, qualité des réponses)
+            <input type="checkbox" name="ameliorations" value="precision"> Précision et fiabilité des informations
+        </div>
+
+<div class="form-group">
+            <label>10/ Quels efforts la poste déploie-t-elle pour surmonter ces défis ?</label>
+            <input type="checkbox" name="efforts" value="formations"> Formations continues
+            <input type="checkbox" name="efforts" value="miseAJour"> Mise à jour des outils et systèmes
+            <input type="checkbox" name="efforts" value="infrastructures"> Amélioration des infrastructures
+            <input type="checkbox" name="efforts" value="autres"> Autres (Merci de préciser)
+            <input type="text" name="autresEfforts">
+        </div>
+
+        <button type="submit">Soumettre</button>
+
+</form>
+</body>
+</html>
